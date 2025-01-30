@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="favicon.png"> 
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="#home" class="logo-box">
+                <img src="Icon.jpeg" alt="Portfolio Icon" class="logo-icon"> Portfolio
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+        <div class="container">
+            <div class="home-content">
+                <div class="home-text">
+                    <h1>Hi, I'm <span class="highlight">Lordu Prathyush Reddy Soudhu</span></h1>
+                    <p>Aspiring Software Engineer with a passion for AI and ML</p>
+                    <a href="#about" class="btn">Learn More About Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>
+                    I am Lordu Prathyush Reddy Soudhu, a Computer Engineering graduate specializing in AI and ML. Proficient in Python, DSA, and cloud technologies, I excel at solving complex problems and building innovative solutions.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <div class="skill-box">
+                    <i class="fab fa-python"></i> Python
+                    <div class="progress-bar" style="width: 85%;"></div>
+                </div>
+                <div class="skill-box">
+                    <i class="fab fa-c"></i> C
+                    <div class="progress-bar" style="width: 70%;"></div>
+                </div>
+                <div class="skill-box">
+                    <i class="fas fa-code"></i> Data Structures & Algorithms (DSA)
+                    <div class="progress-bar" style="width: 80%;"></div>
+                </div>
+                <div class="skill-box">
+                    <i class="fab fa-github"></i> Git/GitHub
+                    <div class="progress-bar" style="width: 75%;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="projects-grid">
+                <div class="project">
+                    <img src="CPbooks.jpeg" alt="CP Books Project" loading="lazy">
+                    <h3>Competitive Programming Book Guide</h3>
+                    <p>A curated collection of books to master data structures and algorithms.</p>
+                    <a href="https://github.com" target="_blank" class="btn">View Project</a>
+                </div>
+                <div class="project">
+                    <img src="weatherimage.jpeg" alt="Weather App Project" loading="lazy">
+                    <h3>Weather Forecast App</h3>
+                    <p>A real-time weather prediction app using APIs and machine learning.</p>
+                    <a href="https://github.com" target="_blank" class="btn">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume-section">
+        <div class="container">
+            <h2>My Resume</h2>
+            <div class="resume-content">
+                <p>Here is a brief view of my resume. You can also download it using the button below:</p>
+                <div class="resume-file">
+                    <embed src="Myresume.pdf" type="application/pdf" width="100%" height="500px" />
+                </div>
+                <a href="Myresume.pdf" download id="resumeDownloadBtn" class="btn">
+                    <i class="fas fa-download"></i> Download Resume
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="submit-form.php" method="POST">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Prathyush Reddy. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://github.com/SavyasachiTeam7"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/prathyush-s-93065627a/"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
